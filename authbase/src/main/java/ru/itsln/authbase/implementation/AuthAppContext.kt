@@ -3,11 +3,7 @@ package ru.itsln.authbase.implementation
 import android.content.Context
 import android.content.SharedPreferences
 import ru.itsln.authbase.AUTH_PREFS_FILENAME
-import ru.itsln.authbase.contract.IAppContext
-import ru.itsln.authbase.contract.IAuthProvider
-import ru.itsln.authbase.contract.IAuthLogic
-import ru.itsln.authbase.contract.IAuthRepo
-import ru.itsln.authbase.contract.IProfileRepo
+import ru.itsln.authbase.contract.*
 
 /**
  * Фактическая реализация IAppContext

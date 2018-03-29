@@ -1,6 +1,9 @@
 package ru.itsln.authbase.implementation
 
-import android.arch.lifecycle.*
+import android.arch.lifecycle.LiveData
+import android.arch.lifecycle.MediatorLiveData
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.Transformations
 import ru.itsln.authbase.accessories.Resource
 import ru.itsln.authbase.contract.IAppContext
 import ru.itsln.authbase.contract.IAuthLogic
