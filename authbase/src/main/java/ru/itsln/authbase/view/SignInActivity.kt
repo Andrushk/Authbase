@@ -17,7 +17,7 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_login.*
 import ru.itsln.authbase.R
 import ru.itsln.authbase.accessories.Resource
-import ru.itsln.authbase.appContextUI
+import ru.itsln.authbase.appContext
 
 /**
  * A login screen that offers login via login/password.
@@ -33,7 +33,7 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        viewModel = SignInViewModel.create(this, appContextUI)
+        viewModel = SignInViewModel.create(this, appContext)
 
         password.setOnEditorActionListener(TextView.OnEditorActionListener { _, id, _ ->
             if (id == EditorInfo.IME_ACTION_DONE || id == EditorInfo.IME_NULL) {

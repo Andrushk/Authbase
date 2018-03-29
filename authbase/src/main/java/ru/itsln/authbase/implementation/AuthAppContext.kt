@@ -9,6 +9,9 @@ import ru.itsln.authbase.contract.*
  * Фактическая реализация IAppContext
  */
 internal class AuthAppContext(private val ctx: Context, private val authProvider: IAuthProvider): IAppContext {
+    override val context: Context
+        get() = ctx
+
     /**
      * Настройки
      */
