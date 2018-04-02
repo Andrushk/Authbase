@@ -147,9 +147,9 @@ class SignInActivity : AppCompatActivity() {
         }
     }
 
-    private fun isLoginValid(logn: String): Boolean {
+    private fun isLoginValid(login: String): Boolean {
         //TODO: реализовать логику проверки логина
-        return login.length() > 1
+        return login.length > 1
     }
 
     private fun isPasswordValid(password: String): Boolean {
